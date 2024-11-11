@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vegetable Plot Layout Designer</title>
+    <style>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+.vegetable-options {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.vegetable {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    margin: 0 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+canvas {
+    border: 1px solid #ccc;
+    display: block;
+    margin: 20px auto;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Vegetable Plot Layout Designer</h1>
+        <div class="vegetable-options">
+            <h2>Select Vegetables:</h2>
+            <div class="vegetable" onclick="selectVegetable('Carrot')">Carrot</div>
+            <div class="vegetable" onclick="selectVegetable('Tomato')">Tomato</div>
+            <div class="vegetable" onclick="selectVegetable('Lettuce')">Lettuce</div>
+            <div class="vegetable" onclick="selectVegetable('Pepper')">Pepper</div>
+        </div>
+        <canvas id="plotCanvas" width="500" height="500"></canvas>
+        <button onclick="clearCanvas()">Clear Canvas</button>
+    </div>
+    <script src="scipt.js"></script>
+</body>
+</html>

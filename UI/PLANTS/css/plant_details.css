@@ -1,0 +1,42 @@
+ /* Plant details page */
+ .plant-details-container {
+    display: flex;                /* Flexbox layout */
+    align-items: flex-start;       /* Align items at the top */
+    gap: 20px;                     /* Space between image and text */
+    margin-top: 20px;
+}
+
+.plant-details-left {
+    display: flex;
+    flex-direction: column;       /* Stack the image and extra details vertically */
+}
+
+.plant-details-img {
+    width: 250px;                  /* Adjusted image size */
+    height: 250px;
+    object-fit: cover;             /* Ensure the image is scaled properly */
+    border-radius: 10px;
+}
+
+.plant-info {
+    flex-grow: 1;                  /* Take the remaining space */
+}
+
+.plant-info h2 {
+    color: green;
+    margin-top: 0;
+}
+
+.plant-info p {
+    color: green;
+    margin: 10px 0;
+}
+
+.plant-extra-details {
+    margin-top: 15px;              /* Added margin to separate from the image */
+}
+
+.plant-extra-details p {
+    color: green;
+    font-weight: bold;
+}

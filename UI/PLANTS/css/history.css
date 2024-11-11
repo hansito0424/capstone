@@ -1,0 +1,18 @@
+.watering-logs {
+    margin-top: 20px;
+}
+
+.watering-logs table {
+    width: 100%;
+    border-collapse: collapse;
+} 
+
+.watering-logs th, .watering-logs td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+}
+
+.watering-logs th {
+    background-color: #f2f2f2;
+}

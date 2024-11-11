@@ -1,0 +1,40 @@
+.devices {
+    margin-top: 20px;
+}
+
+.devices h2 {
+    margin-bottom: 10px;
+}
+
+.add-device {
+    padding: 5px 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.device-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.device-card {
+    /* Styles for each device card */
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+.device-card img {
+    /* Styles for the device image */
+}
+ 
+.device-card h3 {
+    /* Styles for the device name */
+}
+
+.device-actions {
+    /* Styles for the edit and delete buttons */
+}

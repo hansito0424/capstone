@@ -1,0 +1,149 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #E5E5E5;
+}
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: whitesmoke;
+    padding: 0;
+}
+.background::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+     /* background-color: green; */
+  background-size: cover; 
+  background-position: center; 
+  background-image: url('assets/green.png');
+  background-repeat: no-repeat;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    max-width: 1200px;
+    z-index: 1;
+}
+
+.left-section {
+    margin-top: -72px;
+}
+
+.left-section img {
+    width: 400px;
+}
+
+.right-section {
+    background-color: white;
+    padding: 20px;
+    box-shadow: 5px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 320px;
+    /* height: 530px; */
+    /* background-image: linear-gradient(to bottom, transparent 50%, white 50%), 
+                    url('assets/top2.png'); */
+                    background-image: linear-gradient(to bottom, white 50%, transparent 50%), 
+                    url('assets/plantita.png');
+  
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: contain;
+    /* background-size: 100% 50%; 
+   background-size: 150px auto; */
+}
+
+.right-section h2 {
+    color: darkgreen;
+    text-align: center;
+}
+
+.right-section input {
+    width: 100%;
+    padding: 8px;
+    margin: 2px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  border: 1px solid green;
+}
+
+.right-section p {
+    margin: 0;
+}
+
+.password-container {
+    position: relative;
+}
+
+.password-container input {
+    padding-right: 30px;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 10px;
+    top: 65%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.right-section button {
+    background-color: green;
+    color: white;
+    padding: 10px;
+    width: 50%;
+    margin: 0 80px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.right-section .footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.right-section .footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.footer-separator {
+    margin: 0 8px;
+    font-weight: bold;
+}
+
+.right-section .footer a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+.right-section .footer a:hover {
+    text-decoration: underline;
+}
+
+.gender-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.gender-section input[type="radio"] {
+    margin-right: 5px;
+}
+
+.gender-section label {
+    margin-left: 10px;
+}
